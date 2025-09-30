@@ -30,9 +30,10 @@ The main features are:
 git clone https://github.com/javodev/tekton-challenge.git
 cd local-file/tekton-challenge
 ```
+
 ```bash
 # Ejecutar
-docker-compose up -d
+docker-compose up --build
 ```
 
 ### Run test
