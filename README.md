@@ -21,11 +21,18 @@ The main features are:
 
 * [Java 21 SDK](https://www.oracle.com/java/technologies/downloads/#java21)
 * [Maven 3.8.4](https://maven.apache.org/download.cgi)
+* [Docker_Desktop](https://www.docker.com/products/docker-desktop/)
 
 
-### Run Local
+### Run with Docker_Desktop (Recommended)
 ```bash
-$ mvn spring-boot:run
+# Clonar el repositorio
+git clone https://github.com/javodev/tekton-challenge.git
+cd local-file/tekton-challenge
+```
+```bash
+# Ejecutar
+docker-compose up -d
 ```
 
 ### Run test
@@ -33,13 +40,6 @@ $ mvn spring-boot:run
 ```bash
 $ mvn clean test
 ```
-
-### Compile project
-
-```bash
-$ mvn clean package
-```
-
 
 ## Architecture
 The project structure is:
