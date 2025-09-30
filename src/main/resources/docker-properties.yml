@@ -1,0 +1,17 @@
+# application.yml
+spring:
+  profiles:
+    active: default
+
+---
+spring:
+  config:
+    activate:
+      on-profile: docker
+  r2dbc:
+    url: r2dbc:postgresql://postgres:5432/challenge_tech_bd
+    username: postgres
+    password: postgres
+logging:
+  level:
+    org.springframework.web: DEBUG
